@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video con Enlace</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .video-container {
+            position: relative;
+            width: 536px; /* Ajusta el tamaño del contenedor */
+        }
+
+        .video-container video {
+            width: 100%;
+            display: block;
+        }
+
+        .video-container a {
+            position: absolute;
+            bottom: 10.6%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 78px;
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="video-container">
+    <!-- Video -->
+    <video autoplay loop muted>
+        <source src="./assets/video/publicidad.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    <!-- Área de clic invisible -->
+    <a href="https://wa.me/message/F5UWLGUJQHYGH1" target="_blank"></a>
+</div>
+</body>
+</html>
